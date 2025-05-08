@@ -1,0 +1,158 @@
+.container {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 36px;
+    max-height: 500px;
+}
+
+/*table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FF7474;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+thead {
+    border-radius: 20px 20px 0 0; /* Keeps rounded corners at the top */
+}
+
+.header{
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+tbody{
+    display: block;
+    height: 350px;  
+    overflow-y: auto;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+/*high score*/
+.score-container {
+    display: inline-flex;
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+}
+
+.score {
+    min-width: 20px;
+}
+
+/*High score category*/
+.Category {
+    position: relative;
+    display: inline-block;
+}
+.Cat {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1000;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 12px;
+}
+.Category:hover .Cat {
+    visibility: visible;
+    opacity: 1;
+}
+/*Hovering tail*/
+.Category .Cat:after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.Category:hover{
+    color: black;
+}
+
+/*ban button*/
+.ban-button {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 25px;
+}
+
+.ban-button:hover {
+    color: white;
+}
+
+
+/*Searchbar*/
+.searchbar {
+    margin-top: 8px;
+    display: flex;
+    background: #AABDE266;
+    color: #7373F5;
+    border-radius: 100px;
+    height: 52px;
+    width: 385px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    align-items: center;
+    float: right;
+}
+
+/*Search icon*/
+#searchlogo {
+    padding: 10px;
+    font-size: 40px;
+    color: black;
+}
+
+.search{
+    border: none;
+    background-color: transparent;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+    top: 0%;
+
+}
+
+.search::placeholder{
+    color: #7373F580;
+}
+
+.headercontainer{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,28 @@
+/*the stats in the middle*/
+.stats {
+    margin-top: 20px;
+}
+
+.stat-box {
+    background: #FF6B6B;
+    padding-left: 15px;
+    margin-bottom: 50px;
+    color: white;
+    border-radius: 20px;
+    font-size: 36px;
+    display: flex;
+}
+
+.stat-box p{
+    width: 90%;
+}
+/*for the number in the stat box*/
+.stat-box div {
+    font-weight: 1000;
+    width: 10%;
+    font-size: 50px;    
+    color: black;
+    padding: 20px;
+    -webkit-text-stroke: thin;
+}
+
