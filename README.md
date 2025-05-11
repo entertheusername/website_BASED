@@ -13,6 +13,7 @@ Follow the steps below to set up and run the system successfully:
    * Import the provided SQL file into the newly created database.
 
 4. **Run the Application**
-   * Open `localhost/based` and navigate through the files.
+   * Open `localhost/based` in your browser (preferably Google Chrome) and navigate through the files.
    **OR**
    * Navigate to any file in your editor (such as VSC) and run using the pre-configured `launch.json` file.
+   * Login using `Admin123` as the Admin ID and password.
