@@ -9,7 +9,6 @@
     
 </head>
 <body>
-    <div class="blur"></div>
     <div class="loginbox">
     <img src="../Assets/LOGO.png" width="326" height="124"></a>
     <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
