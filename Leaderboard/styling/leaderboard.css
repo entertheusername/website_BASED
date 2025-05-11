@@ -19,7 +19,6 @@
     position: relative;
 }
 
-.active,
 .collapsible:hover {
     border-bottom: 5px solid white;
 }
@@ -55,6 +54,7 @@ table {
     background-color: #FF7474;
     color: white;
     border-radius: 20px;
+    table-layout: fixed;
 }
 
 thead {
@@ -68,25 +68,23 @@ thead {
 th,
 td {
     padding: 10px;
+    text-align: left;
 }
 
+/* Fix for scrollbar issue */
 tbody {
-    display: block;
-    max-height: 500px;
-    overflow-y: auto;
+    display: table;
+    width: 100%;
+}
+
+tr {
+    display: table-row;
     width: 100%;
 }
 
 th {
     background-color: #FF7474;
-    text-align: left;
     border-bottom: 1px solid white;
-}
-
-tr {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
 }
 
 /*delete button*/
