@@ -21,7 +21,7 @@
             account_circle
         </span>
         <?php
-        echo "<span>Admin ID: {$_SESSION['mySession']} </span>";
+        echo "<span>Admin ID: {$_SESSION['name']} </span>";
         ?>
     </div>
 </body>
