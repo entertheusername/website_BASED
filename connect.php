@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "capstoneproject");
+$con = mysqli_connect("localhost", "root", "", "based");
 
 //Check connection(optional)
 if (mysqli_connect_errno()) {
