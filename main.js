@@ -2,13 +2,27 @@
 $(document).ready(function () {
   let selectedItem = localStorage.getItem("selectedItem");
   if (selectedItem) {
-    $(".sidepanelitem").css("color", "white"); // reeset all
-    $(`[href='${selectedItem}']`).css("color", "black"); // highlight selected item raaaaa
+    $(".sidepanelitem").css({
+      "color": "white",
+      "font-weight": "normal"
+    }); // reset all items
+    
+    $(`[href='${selectedItem}']`).css({
+      "color": "black",
+      "font-weight": "bold"
+    }); // highlight selected item with black color and bold font
   }
 
   $(".sidepanelitem").on("click", function () {
-    $(".sidepanelitem").css("color", "white"); // reset all
-    $(this).css("color", "black"); // change color of clicked item
+    $(".sidepanelitem").css({
+      "color": "white",
+      "font-weight": "normal"
+    }); // reset all items
+    
+    $(this).css({
+      "color": "black",
+      "font-weight": "bold"
+    }); // change clicked item to black and bold
 
     localStorage.setItem("selectedItem", $(this).attr("href"));
   });
@@ -45,21 +59,21 @@ function validateAndRedirect() {
 document.addEventListener("DOMContentLoaded", function () {
   var coll = document.querySelectorAll(".collapsible"); //the collapsible itself
   var reset = document.querySelectorAll(".reset"); //that stupid reset button
-  var leaderboardContents = document.querySelectorAll(".leaderboardcontent"); //lcollapsible content
+  var leaderboardContents = document.querySelectorAll(".leaderboardcontent"); //collapsible content
 
-  coll.forEach((button, index) => { //depending on which collapsible u clicked
+  coll.forEach((button, index) => { //depending on which collapsible you clicked
     button.addEventListener("click", function (event) {
       this.classList.toggle("active");
       leaderboardContents[index].classList.toggle("open"); //open to let it trigger the overflow-y
+      
       if (leaderboardContents[index].style.maxHeight) {
         leaderboardContents[index].style.maxHeight = null;
         reset[index].style.display = "none";
-
       } else {
+        // Calculate the proper height based on content
         leaderboardContents[index].style.maxHeight = "400px"; //max height set
-        reset[index].style.display = "block"; //showing that stupid reset button
+        reset[index].style.display = "block"; //showing that reset button
       }
     });
   });
 });
-
