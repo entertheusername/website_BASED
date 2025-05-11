@@ -60,9 +60,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['toggle_ban'])) {
                             s.Username, 
                             s.DateReg,
                             s.BanStatus,
-                            MAX(CASE WHEN sc.GameMode = 'Conversion' THEN sc.Score ELSE NULL END) AS ConversionScore,
-                            MAX(CASE WHEN sc.GameMode = 'Basic Calculation' THEN sc.Score ELSE NULL END) AS BasicScore,
-                            MAX(CASE WHEN sc.GameMode = 'Mixed Calculation' THEN sc.Score ELSE NULL END) AS MixedScore
+                            MAX(CASE WHEN sc.GameMode = 'conversion' THEN sc.Score ELSE NULL END) AS ConversionScore,
+                            MAX(CASE WHEN sc.GameMode = 'basic_calculation' THEN sc.Score ELSE NULL END) AS BasicScore,
+                            MAX(CASE WHEN sc.GameMode = 'mixed_calculation' THEN sc.Score ELSE NULL END) AS MixedScore
                         FROM students s
                         LEFT JOIN scores sc ON s.StudentID = sc.StudentID
                         GROUP BY s.StudentID, s.Username, s.DateReg, s.BanStatus
