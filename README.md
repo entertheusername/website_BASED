@@ -14,6 +14,6 @@ Follow the steps below to set up and run the system successfully:
 
 4. **Run the Application**
    * Open `localhost/based` in your browser (preferably Google Chrome) and navigate through the files.
-   **OR**
+   <br>**OR**</br>
    * Navigate to any file in your editor (such as VSC) and run using the pre-configured `launch.json` file.
    * Login using `Admin123` as the Admin ID and password.
