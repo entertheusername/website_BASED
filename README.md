@@ -4,7 +4,7 @@ Follow the steps below to set up and run the system successfully:
 
 1. **Download and Extract Files**
    * Download this project as ZIP file.
-   * Extract the contents to a desired location on your computer.
+   * Extract the contents to `C:\wamp64\www` and name it as "**based**" on your computer.
 
 2. **Set Up the Database**
    * Launch **WampServer**.
