@@ -114,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['toggle_ban'])) {
             <form method="POST">
                 <input type="hidden" name="toggle_student_id" id="toggle_student_id" value="">
                 <input type="hidden" name="current_ban_status" id="current_ban_status" value="">
-                <p id="banMessage" style="margin-left: 20%;"></p>
+                <p id="banMessage"></p>
                 <button type="submit" name="toggle_ban">Yes</button>
                 <button type="button" onclick="closePopup('popupBan')">No</button>
             </form>
