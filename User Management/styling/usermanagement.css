@@ -1,8 +1,6 @@
 .container {
     width: 100%;
-    margin: 20px auto;
     font-size: 36px;
-    max-height: 500px;
 }
 
 /*table*/
@@ -16,22 +14,31 @@ table {
     overflow: visible;
 }
 
+th:nth-child(1), td:nth-child(1) { /* Date Reg column */
+    width: 25%;
+    padding-left: 18px;
+}
+th:nth-child(2), td:nth-child(2) { /* Username column */
+    width: 35%; 
+}
+th:nth-child(3), td:nth-child(3) { /* High Score column */
+    width: 25%;
+}
+th:nth-child(4), td:nth-child(4) { /* Action column */
+    width: 15%;
+}
+
 thead {
     border-radius: 20px 20px 0 0; /* Keeps rounded corners at the top */
 }
 
-.header{
-    text-align: center;
-}
-
-th,
-td {
+th, td {
     padding: 10px;
 }
 
 tbody{
     display: block;
-    height: 350px;  
+    height: 560px;  
     overflow-y: auto;
     width: 100%;
     z-index: 100;
@@ -64,7 +71,10 @@ tr {
 .Category {
     position: relative;
     display: inline-block;
+    width: 20%;
+    text-align: center;
 }
+
 .Cat {
     visibility: hidden;
     width: 200px;
@@ -107,7 +117,7 @@ tr {
     color: black;
     cursor: pointer;
     text-decoration: underline;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .ban-button:hover {
@@ -117,14 +127,13 @@ tr {
 
 /*Searchbar*/
 .searchbar {
-    margin-top: 8px;
     display: flex;
     background: #AABDE266;
     color: #7373F5;
     border-radius: 100px;
     height: 52px;
     width: 385px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: 600;
     font-size: 24px;
     align-items: center;
@@ -140,6 +149,7 @@ tr {
 
 .search{
     border: none;
+    outline: none;
     background-color: transparent;
     font-family: 'Patrick Hand', cursive;
     font-size: 24px;
