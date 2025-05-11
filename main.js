@@ -55,7 +55,7 @@ function validateAndRedirect() {
   }
 }
 
-//Collapsivle
+//Collapsible
 document.addEventListener("DOMContentLoaded", function () {
   var coll = document.querySelectorAll(".collapsible"); //the collapsible itself
   var reset = document.querySelectorAll(".reset"); //that stupid reset button
