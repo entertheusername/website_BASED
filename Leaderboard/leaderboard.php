@@ -146,7 +146,7 @@ foreach ($gameModes as $mode) {
     <div class="general-popup-content">
         <form method="POST">
             <input type="hidden" name="delete_score_id" id="delete_score_id" value="">
-            <p style="margin-left: 20%;">Are you sure you want to delete this score?</p>
+            <p>Are you sure you want to delete this score?</p>
             <button type="submit" name="delete_score">Yes</button>
             <button type="button" onclick="closePopup('popupdelete')">No</button>
         </form>
@@ -171,7 +171,7 @@ foreach ($gameModes as $mode) {
         <form method="POST">
             <input type="hidden" name="reset_game_mode" id="reset_game_mode" value="">
             <input type="hidden" name="reset_time_range" id="reset_time_range" value="">
-            <p style="margin-left: 20%;">Are you sure you want to reset all scores for this category?</p>
+            <p>Are you sure you want to reset all scores for this category?</p>
             <button type="submit" name="reset_score">Yes</button>
             <button type="button" onclick="closePopup('popupReset')">No</button>
         </form>
