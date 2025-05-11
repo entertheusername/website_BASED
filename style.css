@@ -119,25 +119,22 @@ body {
 
 .general-popup-content {
     background-color: rgb(103, 49, 71, 0.8);
-    padding: 50px 20px;
+    padding: 50px 18px;
     border: 1px solid #ffffff;
     width: 25%;
-    font-weight: bolder;
+    font-weight: bold;
     border-radius: 8px;
-    text-align: left;
+    text-align: center;
     margin: 15% auto;
     color: #e2e2e2;
     font-size: 36px;
-
 }
 
 .general-popup-content button {
     display: block;
-    margin: 0 auto;
-    margin-top: 10px;
     height: 35px;
     float: right;
-    margin-left: 2%;
+    margin-left: 3%;
     border-radius: 20px;
     background-color: #FFB6C1;
     border: none;
